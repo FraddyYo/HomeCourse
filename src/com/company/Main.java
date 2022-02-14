@@ -2,17 +2,19 @@ package com.company;
 
 public class Main {
 
+
     public static void main(String[] args) {
 
-        Employee[] employeeArray = new Employee[10];
+        Employee[] employeeArray = new Employee[7];
 
-        Employee person1 = new Employee("Дмитрий", "Сергеевич", "Иванов", 1, 45_000);
-        Employee person2 = new Employee("Сергей", "Васильевич", "Жуков", 1, 50_000);
-        Employee person3 = new Employee("Анастасия", "Александровна", "Шушкова", 1, 43_000);
-        Employee person4 = new Employee("Светлана", "Владимировна", "Чухнова", 2, 65_000);
-        Employee person5 = new Employee("Валерий", "Константинович", "Рыков", 2, 53_000);
-        Employee person6 = new Employee("Ирина", "Сергеевна", "Сметанкина", 2, 71_000);
-        Employee person7 = new Employee("Святослав", "Николаевич", "Комаров", 2, 37_000);
+
+        employeeArray[0] = new Employee("Дмитрий ", "Сергеевич ", "Иванов ", 1, 45_000);
+        employeeArray[1] = new Employee("Сергей ", "Васильевич ", "Жуков ", 1, 50_000);
+        employeeArray[2] = new Employee("Анастасия ", "Александровна ", "Шушкова ", 1, 43_000);
+        employeeArray[3] = new Employee("Светлана ", "Владимировна ", "Чухнова ", 2, 65_000);
+        employeeArray[4] = new Employee("Валерий ", "Константинович ", "Рыков ", 2, 53_000);
+        employeeArray[5] = new Employee("Ирина ", "Сергеевна ", "Сметанкина ", 2, 71_000);
+        employeeArray[6] = new Employee("Святослав ", "Николаевич ", "Комаров ", 2, 37_000);
         printEmployees(employeeArray);
         System.out.println();
         System.out.println("Суммарная трата на зарплату сотрудникам: " + calculateTotalSalary(employeeArray));
